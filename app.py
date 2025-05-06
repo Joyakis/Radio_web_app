@@ -61,7 +61,7 @@ def update_graph(sheet_name):
         fig = px.histogram(df)
     return fig
 
-
+import os
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8050))  # Use $PORT from Render, fallback to 8050 locally
     app.run(host="0.0.0.0", port=port, debug=True)
